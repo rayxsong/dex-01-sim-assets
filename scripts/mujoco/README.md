@@ -8,7 +8,7 @@ MuJoCo ports of the Isaac Lab examples. No Isaac Sim, Isaac Lab, or NVIDIA GPU i
 git lfs pull
 uv venv --python 3.11 ../env_dex01_mujoco
 source ../env_dex01_mujoco/bin/activate
-uv pip install -e source/dex01_mujoco
+uv pip install -e source/dex01_common -e source/dex01_mujoco
 ```
 
 The DG-5F + DEX-01 hand MJCF is generated from `assets/robots/tesollo/dg5f_right.usda`

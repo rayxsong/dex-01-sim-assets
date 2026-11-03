@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dex01_superdex"
+version = "0.1.0"
+description = "DEX-01 tactile sensor simulation for SuperDex Physics"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+dependencies = ["dex01_common", "superdex-physics>=1.0", "numpy", "scipy", "matplotlib", "trimesh", "shapely", "mapbox-earcut"]
+
+[tool.setuptools]
+packages = ["dex01_superdex"]

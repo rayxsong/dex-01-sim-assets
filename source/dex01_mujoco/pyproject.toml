@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "DEX-01 tactile sensor simulation for MuJoCo"
 requires-python = ">=3.10"
 license = "Apache-2.0"
-dependencies = ["mujoco>=3.2", "numpy", "scipy", "matplotlib", "trimesh", "usd-core"]
+dependencies = ["dex01_common", "mujoco>=3.2", "numpy", "scipy", "matplotlib", "trimesh"]
 
 [tool.setuptools]
 packages = ["dex01_mujoco"]

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dex01_common"
+version = "0.1.0"
+description = "Simulator-neutral DEX-01 taxel layouts and DG-5F hand description"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = ["numpy", "scipy", "trimesh", "usd-core"]
+
+[tool.setuptools]
+packages = ["dex01_common"]

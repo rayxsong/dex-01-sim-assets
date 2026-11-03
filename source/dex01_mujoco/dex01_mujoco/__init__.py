@@ -15,7 +15,8 @@
 
 """Penetration-based DEX-01 tactile sensor for MuJoCo."""
 
-from .patterns import TaxelPattern, dex01_mount, dex01_pattern, grid_pattern
+from dex01_common.patterns import TaxelPattern, dex01_mount, dex01_pattern, grid_pattern
+
 from .tactile_sensor import TactileSensor, TactileSensorData
 
 __all__ = ["TactileSensor", "TactileSensorData", "TaxelPattern", "dex01_mount", "dex01_pattern", "grid_pattern"]

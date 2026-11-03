@@ -28,8 +28,8 @@ from dataclasses import dataclass, field
 
 import mujoco
 import numpy as np
+from dex01_common.patterns import TaxelPattern
 
-from .patterns import TaxelPattern
 from .sdf import body_sdf
 
 
