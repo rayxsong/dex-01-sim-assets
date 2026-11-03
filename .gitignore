@@ -37,6 +37,3 @@ docs/_build/
 
 # Optional isolated documentation renderer
 .venv-render/
-
-# MuJoCo hand model generated from dg5f_right.usda by dex01_mujoco.hand_model
-assets/robots/tesollo/mjcf/

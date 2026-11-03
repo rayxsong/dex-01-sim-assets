@@ -203,8 +203,9 @@ def add_hand(
 ) -> Hand:
     """DG-5F + DEX-01 hand, welded to the world, with joint-space position control.
 
-    ``stiffness`` matches the Isaac Lab demo; ``damping`` and the joint ``armature`` match the MuJoCo
-    port's near-critically damped servo. Links ignore gravity, as in the Isaac Lab demo.
+    ``stiffness`` matches the Isaac Lab demo. Its ``damping = 80`` targets PhysX's implicit drive; with
+    the joint ``armature`` used here it would lag targets by about 0.4 s, so ``damping`` is lower.
+    Links ignore gravity, as in the Isaac Lab demo.
     """
     links = load_dg5f_dex01()
     joints, link_params = [], []

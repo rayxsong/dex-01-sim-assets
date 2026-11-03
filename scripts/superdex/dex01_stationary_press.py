@@ -64,7 +64,7 @@ PRESS_JOINTS = ("rj_dg_2_2", "rj_dg_2_3", "rj_dg_2_4")
 BEND_FRACTION = np.array([0.225, 0.225, 0.10])
 APPROACH_CLEARANCE_M = 0.00002
 MAX_PRESS_DISTANCE_M = 0.0006
-# SuperDex's penalty contact is stiffer than PhysX's or MuJoCo's. Setting the targets to the current
+# SuperDex's penalty contact is stiffer than PhysX's. Setting the targets to the current
 # joints plus the full correction (as the Isaac Lab demo does) chatters against it, so the hold
 # integrates a fraction of each correction into the previous targets, with a smaller per-step limit
 # than Isaac Lab's 0.025 rad (~2 mm of fingertip travel).
